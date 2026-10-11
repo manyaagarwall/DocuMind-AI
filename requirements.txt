@@ -1,0 +1,11 @@
+streamlit
+pytesseract
+Pillow
+python-docx
+pandas
+qdrant-client
+requests
+langchain
+langchain-community
+pypdf
+google-genai

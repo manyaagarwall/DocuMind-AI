@@ -1,0 +1,296 @@
+/* ==========================================
+   DOCUMIND AI — MODERN TEAL UI
+   ========================================== */
+
+:root {
+    --bg: #f4f8f7;
+    --bg-panel: #ffffff;
+    --bg-card: #ffffff;
+    --bg-hover: #e8f5f1;
+    --text: #193b35;
+    --text-secondary: #607873;
+    --border: #d9e8e3;
+    --accent: #16835d;
+    --accent-hover: #116b4b;
+    --accent-light: #dff4eb;
+    --shadow: 0 8px 28px rgba(22, 80, 63, 0.07);
+}
+
+/* Main application */
+.stApp {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: "Inter", "Segoe UI", sans-serif !important;
+}
+
+/* Main content area */
+[data-testid="stMain"] {
+    background: var(--bg) !important;
+}
+
+[data-testid="stMainBlockContainer"] {
+    max-width: 1500px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: #e9f5f1 !important;
+    border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebar"] > div {
+    background: #e9f5f1 !important;
+}
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] span {
+    color: var(--text) !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--text) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 2.15rem !important;
+}
+
+h2 {
+    font-size: 1.55rem !important;
+}
+
+h3 {
+    font-size: 1.2rem !important;
+}
+
+p, li {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(120deg, #16835d, #1596a6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button,
+.stFormSubmitButton > button {
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    background: #ffffff !important;
+    color: var(--text) !important;
+    font-weight: 600 !important;
+    padding: 0.65rem 1rem !important;
+    min-height: 42px;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 2px 6px rgba(22, 80, 63, 0.04);
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: var(--accent-light) !important;
+    border-color: var(--accent) !important;
+    color: var(--accent-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(22, 131, 93, 0.12);
+}
+
+/* Primary buttons */
+.stButton > button[kind="primary"],
+.stFormSubmitButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #16835d, #087e72) !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-weight: 650 !important;
+    box-shadow: 0 4px 12px rgba(22, 131, 93, 0.18);
+}
+
+.stButton > button[kind="primary"]:hover,
+.stFormSubmitButton > button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #116b4b, #08665d) !important;
+    color: #ffffff !important;
+    box-shadow: 0 7px 18px rgba(22, 131, 93, 0.24);
+}
+
+/* Text input */
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input {
+    background: #ffffff !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 0.9rem !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stTextInput input:focus,
+.stTextArea textarea:focus,
+.stNumberInput input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px rgba(22, 131, 93, 0.12) !important;
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    background: #ffffff !important;
+    border: 1.5px dashed #a9cfc0 !important;
+    border-radius: 16px !important;
+    padding: 1rem !important;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    background: #f0faf5 !important;
+    border-color: var(--accent) !important;
+}
+
+[data-testid="stFileUploader"] section {
+    background: transparent !important;
+    border: none !important;
+}
+
+[data-testid="stFileUploader"] button {
+    border-radius: 9px !important;
+}
+
+/* Cards and containers */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: var(--bg-card);
+    border-color: var(--border) !important;
+    border-radius: 16px !important;
+    box-shadow: var(--shadow);
+}
+
+/* Expanders */
+[data-testid="stExpander"] {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+[data-testid="stExpander"] summary {
+    color: var(--text) !important;
+}
+
+/* Chat messages */
+[data-testid="stChatMessage"] {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 16px !important;
+    padding: 1rem !important;
+    margin-bottom: 0.8rem !important;
+    box-shadow: 0 3px 12px rgba(22, 80, 63, 0.04);
+}
+
+/* Chat input */
+[data-testid="stChatInput"] {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 5px 20px rgba(22, 80, 63, 0.07);
+}
+
+[data-testid="stChatInput"] textarea {
+    color: var(--text) !important;
+}
+
+/* Uploaded document items */
+[data-testid="stSidebar"] [data-testid="stVerticalBlockBorderWrapper"] {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: none;
+}
+
+/* Data tables */
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* Status messages */
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    border: 1px solid var(--border) !important;
+}
+
+/* Progress indicators */
+.stProgress > div > div > div {
+    background: var(--accent) !important;
+}
+
+/* Links */
+.stApp a {
+    color: var(--accent) !important;
+    text-decoration: none;
+}
+
+.stApp a:hover {
+    color: var(--accent-hover) !important;
+    text-decoration: underline;
+}
+
+/* Dividers */
+hr {
+    border-color: var(--border) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bdd7cd;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8bb9a5;
+}
+
+/* Focus accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--accent) !important;
+    outline-offset: 2px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    [data-testid="stMainBlockContainer"] {
+        padding: 1rem !important;
+    }
+
+    h1 {
+        font-size: 1.65rem !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .stButton > button {
+        width: 100%;
+    }
+}
